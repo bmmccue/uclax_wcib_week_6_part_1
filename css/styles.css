@@ -1,3 +1,38 @@
+h1 {
+  font-family: dunbar tall, arial, sans-serif;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0); }
+
+button {
+  border: 0;
+  background: rgba(150, 150, 150, 0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px; }
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer; }
+
 /*
  * Globals
  */
@@ -23,14 +58,19 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333; }
+  background-color: pink; }
 
 body {
+  color: #fff; }
+
+.gallery {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  width: 640px;
+  margin: 0 auto; }
 
 .cover-container {
   max-width: 42em; }
@@ -38,6 +78,9 @@ body {
 /*
  * Header
  */
+.inner {
+  font-family: dunbar tall, arial, sans-serif; }
+
 .masthead {
   margin-bottom: 2rem; }
 
