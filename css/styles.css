@@ -1,8 +1,4 @@
-h1 {
-  font-family: dunbar tall, arial, sans-serif;
-  text-align: center;
-  margin-bottom: 30px; }
-
+/* Main Image */
 .full-img {
   position: relative;
   display: block;
@@ -17,15 +13,20 @@ h1 {
   height: 480px;
   background-color: rgba(0, 0, 0, 0); }
 
+/* "Darken" Button */
 button {
+  color: pink;
+  padding-top: 3px;
+  padding-bottom: 3px;
   border: 0;
-  background: rgba(150, 150, 150, 0.6);
-  text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
+  background: white;
+  text-shadow: 2px -1px 1px brown;
+  border: 2px solid white;
+  border-radius: 7px;
   position: absolute;
   cursor: pointer;
-  top: 2px;
-  left: 2px; }
+  top: 5px;
+  left: 5px; }
 
 .thumb-bar img {
   display: block;
@@ -46,10 +47,10 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: pink;
   text-shadow: none;
   /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: black;
   border: .05rem solid #fff; }
 
 /*
@@ -58,10 +59,23 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: pink; }
+  background-color: pink;
+  background: url(../images/bones.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 body {
   color: #fff; }
+  body h1 {
+    font-family: dunbar tall, arial, sans-serif;
+    text-align: center;
+    margin-bottom: 30px; }
+
+header {
+  background-color: pink;
+  padding: 20px; }
 
 .gallery {
   display: -ms-flexbox;
